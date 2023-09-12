@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regestration</title>
+<link rel="stylesheet" href="style.css">
+<style>
+form{
+	text-align:center;
+	border:2px solid black;
+	background-color:#dda687;
+	margin-left:200px;
+	margin-right:200px;	
+	margin-top:50px;
+}
+input{
+	margin:20px;
+	padding:10px;
+}
+label{
+	font-size:20px;
+}
+</style>
+</head>
+
+<body>
+<!--navigation bar-->
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="formwithfile.html">Regestration</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="contact.html">Contact us</a></li>
+</ul>
+
+<form action="handler.php" method="post" autocomplete="on">
+<label for="fname">First Name</label>
+<input type="text"  id="fname" name="fname" required>
+<br>
+
+<label for="lname">Last Name</label>
+<input type="text"  id="lname" name="lname">
+<br>
+
+<label for="email">E-mail</label>
+<input type="text"  id="email" name="email"required>
+<br>
+
+<label for="pass">Password</label>
+<input type="text"  id="pass" name="pass" required>
+<br>
+
+<label>Gender</label><br>
+<input type="radio" id="male" name="gender" value="Male" required>
+<label for="male">Male</label>
+<br>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+<br>
+
+<label for="loc">Location</label>
+<input type="text"  id="loc" name="location" required>
+<br>
+
+<input type="submit" value="done" style="padding-left:20px;  padding-right:20px; font-size:20px;">
+</form>
+</body>
+</html>
